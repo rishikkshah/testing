@@ -1,4 +1,6 @@
 const PDFDocument = require("pdfkit");
+const path =
+  "https://lh3.googleusercontent.com/pw/AM-JKLXWgs_M6SnJwtOhGERdBKoUgzUTbf_lhnOPr9Sbz9otOHPTUbySc3A4M-Wh4GCBBEro6Y8kBfXuuHgOK_QUuEiYkyekgWm-jDzLAujnkSiy2aYtFK-NmOhW4JmGKlPuR4sT0hQ9YlMqlmVcut5Pkt1fcg=s972-no";
 
 function createNotice(res, data) {
   let doc = new PDFDocument({ size: "A4", margin: 50 });
@@ -20,12 +22,7 @@ function createNotice(res, data) {
 
 function generateHeader(doc) {
   doc
-    .image(
-      "E:\\React\\GyankunjAcademy\\server\\public\\images\\logo_dark.png",
-      50,
-      30,
-      { width: 80 }
-    )
+    // .image("C:\\Users\\KIIT\\Pictures\\Saved Pictures", 50, 30, { width: 80 })
     .fillColor("#000")
     .fontSize(30)
     .text("GYANKUNJ ACADEMY", 140, 40)
