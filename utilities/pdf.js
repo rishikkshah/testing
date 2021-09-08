@@ -1,6 +1,4 @@
 const PDFDocument = require("pdfkit");
-const path =
-  "https://lh3.googleusercontent.com/pw/AM-JKLXWgs_M6SnJwtOhGERdBKoUgzUTbf_lhnOPr9Sbz9otOHPTUbySc3A4M-Wh4GCBBEro6Y8kBfXuuHgOK_QUuEiYkyekgWm-jDzLAujnkSiy2aYtFK-NmOhW4JmGKlPuR4sT0hQ9YlMqlmVcut5Pkt1fcg=s972-no";
 
 function createNotice(res, data) {
   let doc = new PDFDocument({ size: "A4", margin: 50 });
